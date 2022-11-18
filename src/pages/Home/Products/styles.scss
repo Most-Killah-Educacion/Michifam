@@ -1,0 +1,114 @@
+.products {
+  grid-column: 1/4;
+  background-color: var(--gray-light);
+  display: grid;
+  grid-template-columns: 1fr minmax(375px, 1200px) 1fr;
+  padding: 80px 0 0 0;
+  &__container {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__title {
+    font-size: 2.3rem;
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Jost';
+    span {
+      font-weight: bold;
+      color: var(--primary);
+    }
+  }
+  &__subtitle {
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 14px;
+  }
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    width: 100%;
+    padding: 70px 0;
+  }
+  &__card {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__image {
+    object-fit: contain;
+    height: 300px;
+  }
+  .box {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    background-color: #fff;
+    box-shadow: 2px 22px 50px -9px rgba(0, 0, 0, 0.43);
+    -webkit-box-shadow: 2px 22px 50px -9px rgba(0, 0, 0, 0.43);
+    -moz-box-shadow: 2px 22px 50px -9px rgba(0, 0, 0, 0.43);
+  }
+  .box:after {
+    position: absolute;
+    width: 64%;
+    height: 12%;
+    left: 18%;
+    border-radius: 50%;
+    z-index: -1;
+    bottom: 0%;
+    content: '';
+    box-shadow: 0 50px 24px rgba(0, 0, 0, 0.24);
+  }
+  &__text {
+    text-align: center;
+    width: 100%;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    padding-top: 20px;
+    font-weight: bold;
+    span {
+      display: block;
+      font-weight: 300;
+      font-size: 1rem;
+      text-align: center;
+      padding-top: 20px;
+    }
+  }
+
+  @media (max-width: 680px) {
+    &__container {
+      padding: 0 35px;
+    }
+    &__box {
+      grid-template-columns: 1fr;
+      gap: 75px;
+    }
+    &__title {
+      font-size: 25px;
+
+      &::after {
+        content: '';
+        width: 30px;
+        height: 2px;
+        background-color: var(--dark);
+        position: absolute;
+        top: 50%;
+        margin-left: 5px;
+      }
+      &::before {
+        content: '';
+        width: 30px;
+        height: 2px;
+        background-color: var(--dark);
+        position: absolute;
+        top: 50%;
+        left: -35px;
+      }
+    }
+  }
+}

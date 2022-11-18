@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="37.0942mm" height="41.6167mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 118.9 133.39"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+   <clipPath id="id0">
+    <rect x="37.74" width="57.14" height="133.39"/>
+   </clipPath>
+   <clipPath id="id1">
+    <rect y="36.17" width="33.7" height="79.13"/>
+   </clipPath>
+   <clipPath id="id2">
+    <path d="M118.9 40.18l0 63.62 -27.09 0 0 -14.61 0 -49.01 27.09 0z"/>
+   </clipPath>
+ </defs>
+ <g id="Capa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g style="clip-path:url(#id0)">
+   <image x="37.74" y="0" width="57.14" height="133.39" xlink:href="ImageBanner_Images/ImageBanner_ImgID1.png"/>
+  </g>
+  <g style="clip-path:url(#id1)">
+   <image x="-0" y="36.17" width="33.7" height="79.13" xlink:href="ImageBanner_Images/ImageBanner_ImgID2.png"/>
+  </g>
+  <g style="clip-path:url(#id2)">
+   <image x="66.83" y="-16.72" width="177.48" height="157.1" xlink:href="ImageBanner_Images/ImageBanner_ImgID3.png"/>
+  </g>
+ </g>
+</svg>

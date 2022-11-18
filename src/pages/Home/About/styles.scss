@@ -1,0 +1,145 @@
+.about {
+  grid-column: 2/3;
+  z-index: 2;
+  &__box {
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr minmax(375px, 1200px) 1fr;
+    background-color: var(--primary);
+    &__container {
+      grid-column: 2/3;
+      padding: 10px;
+      margin-top: 40px;
+      margin-bottom: 50px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  &__card {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  &__icon {
+    height: 75px;
+    padding-bottom: 15px;
+  }
+  &__about {
+    display: flex;
+    padding: 75px 0 40px 0;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  &__left {
+    width: 40%;
+    margin-right: 25px;
+    object-fit: contain;
+  }
+  &__title {
+    font-size: 1.2rem;
+    position: relative;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-family: 'Jost';
+  }
+  &__title2 {
+    font-size: 2.3rem;
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Jost';
+    span {
+      font-weight: bold;
+      color: var(--primary);
+    }
+  }
+  &__paragraph {
+    margin: 50px 0 100px 0;
+    max-width: 50vw;
+    line-height: 2;
+  }
+  &__text {
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 2;
+    color: var(--white);
+    &:first-child {
+      font-weight: bold;
+    }
+  }
+  &__grid {
+    width: 55vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 50px 0;
+  }
+  &__mini {
+    display: flex;
+  }
+  &__miniIco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+      height: 50px;
+      width: 50px;
+      color: var(--primary);
+      margin-right: 10px;
+    }
+  }
+  &__miniText {
+    text-align: left;
+    line-height: 2;
+  }
+
+  @media (max-width: 680px) {
+    &__box {
+      box-sizing: border-box;
+      width: 100vw;
+      grid-template-columns: 1fr;
+      margin: 0;
+      &__container {
+        max-width: 100vw;
+        box-sizing: border-box;
+        grid-template-columns: 1fr;
+      }
+    }
+    &__container {
+      width: 100vw;
+      grid-template-columns: 1fr;
+      box-sizing: border-box;
+    }
+    &__about {
+      flex-direction: column;
+      padding: 50px 15px;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      box-sizing: border-box;
+    }
+    &__paragraph {
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+    &__grid {
+      grid-template-columns: 1fr;
+      width: 100vw;
+      max-width: 100vw;
+      box-sizing: border-box;
+      padding: 50px 15px 0 15px;
+    }
+    &__left {
+      width: 100%;
+      object-fit: cover;
+      margin: 0;
+      padding-bottom: 25px;
+    }
+    &__card {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+}
